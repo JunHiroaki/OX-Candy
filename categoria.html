@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Vertical Dropdown Menu</title>
+  <link rel="stylesheet" href="assets/categoria.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=500, initial-scale=2">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="assets/menu.css">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="assets/submenu.css">
+  <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/modal.css">
+  <link rel='stylesheet' href="assets/modalp.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/medium-editor/latest/css/medium-editor.min.css'>
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+
+
+
+</head>
+<body translate="no" class="light">
+<!-- partial:index.partial.html -->
+
+      <!--nav-->
+    <nav class="nav navbar-default navbar-fixed-top">
+
+    </nav>
+    <header class="cd-heade">
+        <div class="header-wrapper">
+  
+          	<div class="nav-but-wrap">
+            	<div class="menu-icon hover-target">
+              		<span class="menu-icon__line menu-icon__line-left"></span>
+              		<span class="menu-icon__line"></span>
+              		<span class="menu-icon__line menu-icon__line-right"></span>
+           	 	</div>					
+          	</div>					
+        </div>
+              
+    </header>
+  
+    <div class="nav">
+        <div class="nav__content">
+          	<ul class="nav__list">
+            	<li class="nav__list-item active-nav"><a href="#" class="hover-target">Inicio</a></li>
+            	<li class="nav__list-item"><a href="#" class="hover-target">pagina 1</a></li>
+            	<li class="nav__list-item"><a href="#" class="hover-target">pagina 2</a></li>
+            	<li class="nav__list-item"><a href="#" class="hover-target">pagina 3</a></li>
+          	</ul>
+        </div>	
+    </div>
+  
+  
+  
+      
+    <div class='cursor' id="cursor"></div>
+    <div class='cursor2' id="cursor2"></div>
+	<div class='cursor3' id="cursor3"></div>
+	
+
+	<div class="row" style="margin-left: 2%;">
+		<div class="container" style="position: fixed; z-index: 100; margin-left: -2%;">
+			<div class="navy" style="text-align: center;"  data-spy="scroll">
+				<div class="row">
+					<div class="col-2">
+						<a href="index.html"  >
+							<img src="img/looz.png" style="z-index: 1000; margin-top: -2%; margin-left: -290%;" >
+						</a>
+					</div>
+					<div class="col">
+						<ul class="dropdown" style="margin-left: 135px;">
+							<li>
+								<a href="#section1">BATATA DELICIA</a>
+							</li>
+							<li>
+								<a href="#section2">BATATA DOCE</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="menu-container">
+			
+			<div class="container">
+				<br><br><br><br><br><br><br>
+				<ul class="vertical-nav" style="margin-top: -1%;">
+					<li>
+						<a href="#"><i data-feather="activity"></i></a>
+						<div class="hover-menu">
+							<ul>
+								<li><a href="#">Menu Item</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#"><i data-feather="box"></i></a>
+						<div class="hover-menu">
+							<ul>
+								<li><a href="#">Menu Item</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#"><i data-feather="cloud"></i></a>
+						<div class="hover-menu">
+							<ul>
+								<li><a href="#">Menu Item</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#"><i data-feather="database"></i></a>
+						<div class="hover-menu">
+							<ul>
+								<li><a href="#">Menu Item</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#"><i data-feather="inbox"></i></a>
+						<div class="hover-menu">
+							<ul>
+								<li><a href="#">Menu Item</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#"><i data-feather="package"></i></a>
+						<div class="hover-menu">
+							<ul>
+								<li><a href="#">Menu Item</a></li>
+
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#"><i data-feather="user"></i></a>
+						<div class="hover-menu">
+							<ul>
+								<li><a href="#">Menu Item</a></li>
+							</ul>
+						</div>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	
+
+
+	<div id="section1">
+		<h1 style="font-size: 60px;color: #fff; font-family: 'Courgette', cursive; margin-left: 43%; margin-top: -5%; ">
+			Batata Delicia
+		</h1>
+		<div class="container" style="margin-left: 12%;">
+			<div class="row">
+				<div class="col-4" style="text-align: center;">
+					
+					<img class="product-ap" src="image/barras/4.png"><br>
+					<div class="mother">
+						<a href="#modal-fulla1" uk-toggle style="text-decoration:none;" class="text-product">
+							<button type="button" class="btn btn-plus pp ">+</button>
+								Barra Branca
+						</a>
+					</div>
+				</div>
+				<div class="col-4" style="text-align: center;">
+					
+					<img class="product-ap" src="image/barras/4.png"><br>
+					<div class="mother">
+						<a href="#modal-fulla2" uk-toggle style="text-decoration:none;" class="text-product">
+							<button type="button" class="btn btn-plus pp ">+</button>
+								Barra Branca
+						</a>
+					</div>
+				</div>
+				<div class="col-4" style="text-align: center;">
+					
+					<img class="product-ap" src="image/barras/4.png"><br>
+					<div class="mother">
+						<a href="#modal-fulla3" uk-toggle style="text-decoration:none;" class="text-product">
+							<button type="button" class="btn btn-plus pp ">+</button>
+								Barra Branca
+
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" style="margin-left: 12%; margin-top: 10%;">
+			<div class="row">
+				<div class="col-4" style="text-align: center;">
+					
+					<img class="product-ap" src="image/barras/4.png"><br>
+					<div class="mother">
+						<a href="#modal-fulla4" uk-toggle style="text-decoration:none;" class="text-product">
+							<button type="button" class="btn btn-plus pp ">+</button>
+								Barra Branca
+						</a>
+					</div>
+				</div>
+				<div class="col-4" style="text-align: center;">
+					
+					<img class="product-ap" src="image/barras/4.png"><br>
+					<div class="mother">
+						<a href="#modal-fulla5" uk-toggle style="text-decoration:none;" class="text-product">
+							<button type="button" class="btn btn-plus pp ">+</button>
+								Barra Branca
+						</a>
+					</div>
+				</div>
+				<div class="col-4" style="text-align: center;">
+					
+					<img class="product-ap" src="image/barras/4.png"><br>
+					<div class="mother">
+						<a href="#modal-fulla6" uk-toggle style="text-decoration:none;" class="text-product">
+							<button type="button" class="btn btn-plus pp ">+</button>
+								Barra Branca
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 1 item-->
+		<div id="modal-fulla1" class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog">
+			  	<button class="uk-modal-close-full" type="button" uk-close></button>
+			  	<div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+				  	
+					<div class="uk-background-cover" uk-height-viewport> 
+						<div class="t1">
+							Barra Branca
+							<div class="row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+								<div class="col-2" style="margin-top: -1%;">
+									<p style="text-align: center; margin-left: -10%;">Ref.</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="fas fa-bookmark" title="Calorias"></i> 666666</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="far fa-bookmark" title="Calorias"></i> 666666</p>
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fas fa-balance-scale fa-sm "></i>
+									<p style="font-size: 13px; margin-top: -16%;">250g</p>
+									<p style="font-size: 13px; margin-top: -25%;">250g</p>
+
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fa fa-box-open fa-sm">  </i>
+									<p style="font-size: 13px; margin-top: -16%;">10 un</p>
+									<p style="font-size: 13px; margin-top: -25%;">10 un</p>
+
+								</div>
+							</div>
+							<p style="margin-top: 30%;">Preparation Method </p>
+							<hr style="width: 70%;margin-top: -2%;">
+							<div class="row">
+								<div class="col-1" style="margin-top: -3%; margin-left: -5%;">
+									<i style="font-size: 16px;" class="fas fa-bookmark" title="Preparo"></i> 
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Descongelar 20 min</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Pré aquecer forno 180°</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Cozinhar Forno 180° / 20 min</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-padding-large">
+						<div class="img-cat">
+							<img src="image/barras/4.png">
+
+							<p class="editable">
+								Originário da Tailândia, o Snack de Arroz Original Kalassi é feito com arroz aromático Thai Jasmine. O produto é assado e não contém glúten ou gordura trans em sua composição.
+								Com espessura fininha, textura leve e crocante, é ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								A Kalassi é uma nova marca do mercado tailandês, importada no Brasil pela Aurora. A empresa produz snacks de arroz e aperitivos de diversos sabores, comercializados na Europa, Ásia e Austrália.
+								
+								Origem: Tailândia
+								Sugestão de consumo: Ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								
+								Farinha de arroz, óleo de farelo de arroz (antioxidante tocoferol), tempero [maltodextrina, sal, cana de açúcar, molho de soja em Pó (maltodextrina, sal)].
+								Não contém glúten.
+								Alérgicos: Contém derivados de soja. Pode conter leite de vaca.
+							</p>	
+
+
+
+						</div>
+					</div>
+				</div>
+		  	</div>
+		  
+		</div>
+
+		<!-- 2 item-->
+		<div id="modal-fulla2" class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog">
+			  	<button class="uk-modal-close-full" type="button" uk-close></button>
+			  	<div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+				  	
+					<div class="uk-background-cover" uk-height-viewport> 
+						<div class="t1">
+							Barra Branca
+							<div class="row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+								<div class="col-2" style="margin-top: -1%;">
+									<p style="text-align: center; margin-left: -10%;">Ref.</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="fas fa-bookmark" title="Calorias"></i> 666666</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="far fa-bookmark" title="Calorias"></i> 666666</p>
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fas fa-balance-scale fa-sm "></i>
+									<p style="font-size: 13px; margin-top: -16%;">250g</p>
+									<p style="font-size: 13px; margin-top: -25%;">250g</p>
+
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fa fa-box-open fa-sm">  </i>
+									<p style="font-size: 13px; margin-top: -16%;">10 un</p>
+									<p style="font-size: 13px; margin-top: -25%;">10 un</p>
+
+								</div>
+							</div>
+							<p style="margin-top: 30%;">Preparation Method </p>
+							<hr style="width: 70%;margin-top: -2%;">
+							<div class="row">
+								<div class="col-1" style="margin-top: -3%; margin-left: -5%;">
+									<i style="font-size: 16px;" class="fas fa-bookmark" title="Preparo"></i> 
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Descongelar 20 min</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Pré aquecer forno 180°</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Cozinhar Forno 180° / 20 min</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-padding-large">
+						<div class="img-cat">
+							<img src="image/barras/4.png">
+
+							<p class="editable">
+								Originário da Tailândia, o Snack de Arroz Original Kalassi é feito com arroz aromático Thai Jasmine. O produto é assado e não contém glúten ou gordura trans em sua composição.
+								Com espessura fininha, textura leve e crocante, é ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								A Kalassi é uma nova marca do mercado tailandês, importada no Brasil pela Aurora. A empresa produz snacks de arroz e aperitivos de diversos sabores, comercializados na Europa, Ásia e Austrália.
+								
+								Origem: Tailândia
+								Sugestão de consumo: Ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								
+								Farinha de arroz, óleo de farelo de arroz (antioxidante tocoferol), tempero [maltodextrina, sal, cana de açúcar, molho de soja em Pó (maltodextrina, sal)].
+								Não contém glúten.
+								Alérgicos: Contém derivados de soja. Pode conter leite de vaca.
+							</p>	
+
+
+
+						</div>
+					</div>
+				</div>
+		  	</div>
+		  
+		</div>
+
+		<!-- 3 item-->
+		<div id="modal-fulla3" class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog">
+			  	<button class="uk-modal-close-full" type="button" uk-close></button>
+			  	<div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+				  	
+					<div class="uk-background-cover" uk-height-viewport> 
+						<div class="t1">
+							Barra Branca
+							<div class="row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+								<div class="col-2" style="margin-top: -1%;">
+									<p style="text-align: center; margin-left: -10%;">Ref.</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="fas fa-bookmark" title="Calorias"></i> 666666</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="far fa-bookmark" title="Calorias"></i> 666666</p>
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fas fa-balance-scale fa-sm "></i>
+									<p style="font-size: 13px; margin-top: -16%;">250g</p>
+									<p style="font-size: 13px; margin-top: -25%;">250g</p>
+
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fa fa-box-open fa-sm">  </i>
+									<p style="font-size: 13px; margin-top: -16%;">10 un</p>
+									<p style="font-size: 13px; margin-top: -25%;">10 un</p>
+
+								</div>
+							</div>
+							<p style="margin-top: 30%;">Preparation Method </p>
+							<hr style="width: 70%;margin-top: -2%;">
+							<div class="row">
+								<div class="col-1" style="margin-top: -3%; margin-left: -5%;">
+									<i style="font-size: 16px;" class="fas fa-bookmark" title="Preparo"></i> 
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Descongelar 20 min</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Pré aquecer forno 180°</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Cozinhar Forno 180° / 20 min</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-padding-large">
+						<div class="img-cat">
+							<img src="image/barras/4.png">
+
+							<p class="editable">
+								Originário da Tailândia, o Snack de Arroz Original Kalassi é feito com arroz aromático Thai Jasmine. O produto é assado e não contém glúten ou gordura trans em sua composição.
+								Com espessura fininha, textura leve e crocante, é ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								A Kalassi é uma nova marca do mercado tailandês, importada no Brasil pela Aurora. A empresa produz snacks de arroz e aperitivos de diversos sabores, comercializados na Europa, Ásia e Austrália.
+								
+								Origem: Tailândia
+								Sugestão de consumo: Ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								
+								Farinha de arroz, óleo de farelo de arroz (antioxidante tocoferol), tempero [maltodextrina, sal, cana de açúcar, molho de soja em Pó (maltodextrina, sal)].
+								Não contém glúten.
+								Alérgicos: Contém derivados de soja. Pode conter leite de vaca.
+							</p>	
+
+						</div>
+					</div>
+				</div>
+		  	</div>
+		  
+		</div>
+
+
+
+		<!-- 4 item-->
+		<div id="modal-fulla4" class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog">
+			  	<button class="uk-modal-close-full" type="button" uk-close></button>
+			  	<div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+				  	
+					<div class="uk-background-cover" uk-height-viewport> 
+						<div class="t1">
+							Barra Branca
+							<div class="row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+								<div class="col-2" style="margin-top: -1%;">
+									<p style="text-align: center; margin-left: -10%;">Ref.</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="fas fa-bookmark" title="Calorias"></i> 666666</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="far fa-bookmark" title="Calorias"></i> 666666</p>
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fas fa-balance-scale fa-sm "></i>
+									<p style="font-size: 13px; margin-top: -16%;">250g</p>
+									<p style="font-size: 13px; margin-top: -25%;">250g</p>
+
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fa fa-box-open fa-sm">  </i>
+									<p style="font-size: 13px; margin-top: -16%;">10 un</p>
+									<p style="font-size: 13px; margin-top: -25%;">10 un</p>
+
+								</div>
+							</div>
+							<p style="margin-top: 30%;">Preparation Method </p>
+							<hr style="width: 70%;margin-top: -2%;">
+							<div class="row">
+								<div class="col-1" style="margin-top: -3%; margin-left: -5%;">
+									<i style="font-size: 16px;" class="fas fa-bookmark" title="Preparo"></i> 
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Descongelar 20 min</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Pré aquecer forno 180°</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Cozinhar Forno 180° / 20 min</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-padding-large">
+						<div class="img-cat">
+							<img src="image/barras/4.png">
+
+							<p class="editable">
+								Originário da Tailândia, o Snack de Arroz Original Kalassi é feito com arroz aromático Thai Jasmine. O produto é assado e não contém glúten ou gordura trans em sua composição.
+								Com espessura fininha, textura leve e crocante, é ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								A Kalassi é uma nova marca do mercado tailandês, importada no Brasil pela Aurora. A empresa produz snacks de arroz e aperitivos de diversos sabores, comercializados na Europa, Ásia e Austrália.
+								
+								Origem: Tailândia
+								Sugestão de consumo: Ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								
+								Farinha de arroz, óleo de farelo de arroz (antioxidante tocoferol), tempero [maltodextrina, sal, cana de açúcar, molho de soja em Pó (maltodextrina, sal)].
+								Não contém glúten.
+								Alérgicos: Contém derivados de soja. Pode conter leite de vaca.
+							</p>	
+
+
+
+						</div>
+					</div>
+				</div>
+		  	</div>
+		  
+		</div>
+
+		<!-- 5 item-->
+		<div id="modal-fulla5" class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog">
+			  	<button class="uk-modal-close-full" type="button" uk-close></button>
+			  	<div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+				  	
+					<div class="uk-background-cover" uk-height-viewport> 
+						<div class="t1">
+							Barra Branca
+							<div class="row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+								<div class="col-2" style="margin-top: -1%;">
+									<p style="text-align: center; margin-left: -10%;">Ref.</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="fas fa-bookmark" title="Calorias"></i> 666666</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="far fa-bookmark" title="Calorias"></i> 666666</p>
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fas fa-balance-scale fa-sm "></i>
+									<p style="font-size: 13px; margin-top: -16%;">250g</p>
+									<p style="font-size: 13px; margin-top: -25%;">250g</p>
+
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fa fa-box-open fa-sm">  </i>
+									<p style="font-size: 13px; margin-top: -16%;">10 un</p>
+									<p style="font-size: 13px; margin-top: -25%;">10 un</p>
+
+								</div>
+							</div>
+							<p style="margin-top: 30%;">Preparation Method </p>
+							<hr style="width: 70%;margin-top: -2%;">
+							<div class="row">
+								<div class="col-1" style="margin-top: -3%; margin-left: -5%;">
+									<i style="font-size: 16px;" class="fas fa-bookmark" title="Preparo"></i> 
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Descongelar 20 min</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Pré aquecer forno 180°</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Cozinhar Forno 180° / 20 min</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-padding-large">
+						<div class="img-cat">
+							<img src="image/barras/4.png">
+
+							<p class="editable">
+								Originário da Tailândia, o Snack de Arroz Original Kalassi é feito com arroz aromático Thai Jasmine. O produto é assado e não contém glúten ou gordura trans em sua composição.
+								Com espessura fininha, textura leve e crocante, é ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								A Kalassi é uma nova marca do mercado tailandês, importada no Brasil pela Aurora. A empresa produz snacks de arroz e aperitivos de diversos sabores, comercializados na Europa, Ásia e Austrália.
+								
+								Origem: Tailândia
+								Sugestão de consumo: Ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								
+								Farinha de arroz, óleo de farelo de arroz (antioxidante tocoferol), tempero [maltodextrina, sal, cana de açúcar, molho de soja em Pó (maltodextrina, sal)].
+								Não contém glúten.
+								Alérgicos: Contém derivados de soja. Pode conter leite de vaca.
+							</p>	
+
+
+
+						</div>
+					</div>
+				</div>
+		  	</div>
+		  
+		</div>
+
+		<!-- 6 item-->
+		<div id="modal-fulla6" class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog">
+			  	<button class="uk-modal-close-full" type="button" uk-close></button>
+			  	<div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+				  	
+					<div class="uk-background-cover" uk-height-viewport> 
+						<div class="t1">
+							Barra Branca
+							<div class="row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+								<div class="col-2" style="margin-top: -1%;">
+									<p style="text-align: center; margin-left: -10%;">Ref.</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="fas fa-bookmark" title="Calorias"></i> 666666</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="far fa-bookmark" title="Calorias"></i> 666666</p>
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fas fa-balance-scale fa-sm "></i>
+									<p style="font-size: 13px; margin-top: -16%;">250g</p>
+									<p style="font-size: 13px; margin-top: -25%;">250g</p>
+
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fa fa-box-open fa-sm">  </i>
+									<p style="font-size: 13px; margin-top: -16%;">10 un</p>
+									<p style="font-size: 13px; margin-top: -25%;">10 un</p>
+
+								</div>
+							</div>
+							<p style="margin-top: 30%;">Preparation Method </p>
+							<hr style="width: 70%;margin-top: -2%;">
+							<div class="row">
+								<div class="col-1" style="margin-top: -3%; margin-left: -5%;">
+									<i style="font-size: 16px;" class="fas fa-bookmark" title="Preparo"></i> 
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Descongelar 20 min</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Pré aquecer forno 180°</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Cozinhar Forno 180° / 20 min</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-padding-large">
+						<div class="img-cat">
+							<img src="image/barras/4.png">
+
+							<p class="editable">
+								Originário da Tailândia, o Snack de Arroz Original Kalassi é feito com arroz aromático Thai Jasmine. O produto é assado e não contém glúten ou gordura trans em sua composição.
+								Com espessura fininha, textura leve e crocante, é ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								A Kalassi é uma nova marca do mercado tailandês, importada no Brasil pela Aurora. A empresa produz snacks de arroz e aperitivos de diversos sabores, comercializados na Europa, Ásia e Austrália.
+								
+								Origem: Tailândia
+								Sugestão de consumo: Ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								
+								Farinha de arroz, óleo de farelo de arroz (antioxidante tocoferol), tempero [maltodextrina, sal, cana de açúcar, molho de soja em Pó (maltodextrina, sal)].
+								Não contém glúten.
+								Alérgicos: Contém derivados de soja. Pode conter leite de vaca.
+							</p>	
+
+						</div>
+					</div>
+				</div>
+		  	</div>
+		</div>
+	</div>  
+
+
+
+
+	<div id="section2" style="margin-bottom: 10%;">
+		<h1 style="font-size: 60px;color: #fff; font-family: 'Courgette', cursive; margin-left: 43%; margin-top: 15%; ">
+			Batata Doce
+		</h1>
+		<div class="container" style="margin-left: 12%;">
+			<div class="row">
+				<div class="col-4" style="text-align: center;">
+					
+					<img class="product-ap" src="image/barras/4.png"><br>
+					<div class="mother">
+						<a href="#modal-fullb1" uk-toggle style="text-decoration:none;" class="text-product">
+							<button type="button" class="btn btn-plus pp ">+</button>
+								Barra Branca
+						</a>
+					</div>
+				</div>
+				<div class="col-4" style="text-align: center;">
+					
+					<img class="product-ap" src="image/barras/4.png"><br>
+					<div class="mother">
+						<a href="#modal-fullb2" uk-toggle style="text-decoration:none;" class="text-product">
+							<button type="button" class="btn btn-plus pp ">+</button>
+								Barra Branca
+						</a>
+					</div>
+				</div>
+				<div class="col-4" style="text-align: center;">
+					
+					<img class="product-ap" src="image/barras/4.png"><br>
+					<div class="mother">
+						<a href="#modal-fullb3" uk-toggle style="text-decoration:none;" class="text-product">
+							<button type="button" class="btn btn-plus pp ">+</button>
+								Barra Branca
+
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" style="margin-left: 12%; margin-top: 10%;">
+			<div class="row">
+				<div class="col-4" style="text-align: center;">
+					
+					<img class="product-ap" src="image/barras/4.png"><br>
+					<div class="mother">
+						<a href="#modal-fullb4" uk-toggle style="text-decoration:none;" class="text-product">
+							<button type="button" class="btn btn-plus pp ">+</button>
+								Barra Branca
+						</a>
+					</div>
+				</div>
+				<div class="col-4" style="text-align: center;">
+					
+					<img class="product-ap" src="image/barras/4.png"><br>
+					<div class="mother">
+						<a href="#modal-fullb5" uk-toggle style="text-decoration:none;" class="text-product">
+							<button type="button" class="btn btn-plus pp ">+</button>
+								Barra Branca
+						</a>
+					</div>
+				</div>
+				<div class="col-4" style="text-align: center;">
+					
+					<img class="product-ap" src="image/barras/4.png"><br>
+					<div class="mother">
+						<a href="#modal-fullb6" uk-toggle style="text-decoration:none;" class="text-product">
+							<button type="button" class="btn btn-plus pp ">+</button>
+								Barra Branca
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 1 item-->
+		<div id="modal-fullb1" class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog">
+			  	<button class="uk-modal-close-full" type="button" uk-close></button>
+			  	<div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+				  	
+					<div class="uk-background-cover" uk-height-viewport> 
+						<div class="t1">
+							Barra Branca
+							<div class="row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+								<div class="col-2" style="margin-top: -1%;">
+									<p style="text-align: center; margin-left: -10%;">Ref.</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="fas fa-bookmark" title="Calorias"></i> 666666</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="far fa-bookmark" title="Calorias"></i> 666666</p>
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fas fa-balance-scale fa-sm "></i>
+									<p style="font-size: 13px; margin-top: -16%;">250g</p>
+									<p style="font-size: 13px; margin-top: -25%;">250g</p>
+
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fa fa-box-open fa-sm">  </i>
+									<p style="font-size: 13px; margin-top: -16%;">10 un</p>
+									<p style="font-size: 13px; margin-top: -25%;">10 un</p>
+
+								</div>
+							</div>
+							<p style="margin-top: 30%;">Preparation Method </p>
+							<hr style="width: 70%;margin-top: -2%;">
+							<div class="row">
+								<div class="col-1" style="margin-top: -3%; margin-left: -5%;">
+									<i style="font-size: 16px;" class="fas fa-bookmark" title="Preparo"></i> 
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Descongelar 20 min</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Pré aquecer forno 180°</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Cozinhar Forno 180° / 20 min</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-padding-large">
+						<div class="img-cat">
+							<img src="image/barras/4.png">
+
+							<p class="editable">
+								Originário da Tailândia, o Snack de Arroz Original Kalassi é feito com arroz aromático Thai Jasmine. O produto é assado e não contém glúten ou gordura trans em sua composição.
+								Com espessura fininha, textura leve e crocante, é ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								A Kalassi é uma nova marca do mercado tailandês, importada no Brasil pela Aurora. A empresa produz snacks de arroz e aperitivos de diversos sabores, comercializados na Europa, Ásia e Austrália.
+								
+								Origem: Tailândia
+								Sugestão de consumo: Ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								
+								Farinha de arroz, óleo de farelo de arroz (antioxidante tocoferol), tempero [maltodextrina, sal, cana de açúcar, molho de soja em Pó (maltodextrina, sal)].
+								Não contém glúten.
+								Alérgicos: Contém derivados de soja. Pode conter leite de vaca.
+							</p>	
+
+
+
+						</div>
+					</div>
+				</div>
+		  	</div>
+		  
+		</div>
+
+		<!-- 2 item-->
+		<div id="modal-fullb2" class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog">
+			  	<button class="uk-modal-close-full" type="button" uk-close></button>
+			  	<div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+				  	
+					<div class="uk-background-cover" uk-height-viewport> 
+						<div class="t1">
+							Barra Branca
+							<div class="row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+								<div class="col-2" style="margin-top: -1%;">
+									<p style="text-align: center; margin-left: -10%;">Ref.</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="fas fa-bookmark" title="Calorias"></i> 666666</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="far fa-bookmark" title="Calorias"></i> 666666</p>
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fas fa-balance-scale fa-sm "></i>
+									<p style="font-size: 13px; margin-top: -16%;">250g</p>
+									<p style="font-size: 13px; margin-top: -25%;">250g</p>
+
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fa fa-box-open fa-sm">  </i>
+									<p style="font-size: 13px; margin-top: -16%;">10 un</p>
+									<p style="font-size: 13px; margin-top: -25%;">10 un</p>
+
+								</div>
+							</div>
+							<p style="margin-top: 30%;">Preparation Method </p>
+							<hr style="width: 70%;margin-top: -2%;">
+							<div class="row">
+								<div class="col-1" style="margin-top: -3%; margin-left: -5%;">
+									<i style="font-size: 16px;" class="fas fa-bookmark" title="Preparo"></i> 
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Descongelar 20 min</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Pré aquecer forno 180°</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Cozinhar Forno 180° / 20 min</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-padding-large">
+						<div class="img-cat">
+							<img src="image/barras/4.png">
+
+							<p class="editable">
+								Originário da Tailândia, o Snack de Arroz Original Kalassi é feito com arroz aromático Thai Jasmine. O produto é assado e não contém glúten ou gordura trans em sua composição.
+								Com espessura fininha, textura leve e crocante, é ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								A Kalassi é uma nova marca do mercado tailandês, importada no Brasil pela Aurora. A empresa produz snacks de arroz e aperitivos de diversos sabores, comercializados na Europa, Ásia e Austrália.
+								
+								Origem: Tailândia
+								Sugestão de consumo: Ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								
+								Farinha de arroz, óleo de farelo de arroz (antioxidante tocoferol), tempero [maltodextrina, sal, cana de açúcar, molho de soja em Pó (maltodextrina, sal)].
+								Não contém glúten.
+								Alérgicos: Contém derivados de soja. Pode conter leite de vaca.
+							</p>	
+
+
+
+						</div>
+					</div>
+				</div>
+		  	</div>
+		  
+		</div>
+
+		<!-- 3 item-->
+		<div id="modal-fullb3" class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog">
+			  	<button class="uk-modal-close-full" type="button" uk-close></button>
+			  	<div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+				  	
+					<div class="uk-background-cover" uk-height-viewport> 
+						<div class="t1">
+							Barra Branca
+							<div class="row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+								<div class="col-2" style="margin-top: -1%;">
+									<p style="text-align: center; margin-left: -10%;">Ref.</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="fas fa-bookmark" title="Calorias"></i> 666666</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="far fa-bookmark" title="Calorias"></i> 666666</p>
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fas fa-balance-scale fa-sm "></i>
+									<p style="font-size: 13px; margin-top: -16%;">250g</p>
+									<p style="font-size: 13px; margin-top: -25%;">250g</p>
+
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fa fa-box-open fa-sm">  </i>
+									<p style="font-size: 13px; margin-top: -16%;">10 un</p>
+									<p style="font-size: 13px; margin-top: -25%;">10 un</p>
+
+								</div>
+							</div>
+							<p style="margin-top: 30%;">Preparation Method </p>
+							<hr style="width: 70%;margin-top: -2%;">
+							<div class="row">
+								<div class="col-1" style="margin-top: -3%; margin-left: -5%;">
+									<i style="font-size: 16px;" class="fas fa-bookmark" title="Preparo"></i> 
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Descongelar 20 min</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Pré aquecer forno 180°</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Cozinhar Forno 180° / 20 min</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-padding-large">
+						<div class="img-cat">
+							<img src="image/barras/4.png">
+
+							<p class="editable">
+								Originário da Tailândia, o Snack de Arroz Original Kalassi é feito com arroz aromático Thai Jasmine. O produto é assado e não contém glúten ou gordura trans em sua composição.
+								Com espessura fininha, textura leve e crocante, é ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								A Kalassi é uma nova marca do mercado tailandês, importada no Brasil pela Aurora. A empresa produz snacks de arroz e aperitivos de diversos sabores, comercializados na Europa, Ásia e Austrália.
+								
+								Origem: Tailândia
+								Sugestão de consumo: Ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								
+								Farinha de arroz, óleo de farelo de arroz (antioxidante tocoferol), tempero [maltodextrina, sal, cana de açúcar, molho de soja em Pó (maltodextrina, sal)].
+								Não contém glúten.
+								Alérgicos: Contém derivados de soja. Pode conter leite de vaca.
+							</p>	
+
+						</div>
+					</div>
+				</div>
+		  	</div>
+		  
+		</div>
+
+
+
+		<!-- 4 item-->
+		<div id="modal-fullb4" class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog">
+			  	<button class="uk-modal-close-full" type="button" uk-close></button>
+			  	<div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+				  	
+					<div class="uk-background-cover" uk-height-viewport> 
+						<div class="t1">
+							Barra Branca
+							<div class="row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+								<div class="col-2" style="margin-top: -1%;">
+									<p style="text-align: center; margin-left: -10%;">Ref.</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="fas fa-bookmark" title="Calorias"></i> 666666</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="far fa-bookmark" title="Calorias"></i> 666666</p>
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fas fa-balance-scale fa-sm "></i>
+									<p style="font-size: 13px; margin-top: -16%;">250g</p>
+									<p style="font-size: 13px; margin-top: -25%;">250g</p>
+
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fa fa-box-open fa-sm">  </i>
+									<p style="font-size: 13px; margin-top: -16%;">10 un</p>
+									<p style="font-size: 13px; margin-top: -25%;">10 un</p>
+
+								</div>
+							</div>
+							<p style="margin-top: 30%;">Preparation Method </p>
+							<hr style="width: 70%;margin-top: -2%;">
+							<div class="row">
+								<div class="col-1" style="margin-top: -3%; margin-left: -5%;">
+									<i style="font-size: 16px;" class="fas fa-bookmark" title="Preparo"></i> 
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Descongelar 20 min</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Pré aquecer forno 180°</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Cozinhar Forno 180° / 20 min</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-padding-large">
+						<div class="img-cat">
+							<img src="image/barras/4.png">
+
+							<p class="editable">
+								Originário da Tailândia, o Snack de Arroz Original Kalassi é feito com arroz aromático Thai Jasmine. O produto é assado e não contém glúten ou gordura trans em sua composição.
+								Com espessura fininha, textura leve e crocante, é ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								A Kalassi é uma nova marca do mercado tailandês, importada no Brasil pela Aurora. A empresa produz snacks de arroz e aperitivos de diversos sabores, comercializados na Europa, Ásia e Austrália.
+								
+								Origem: Tailândia
+								Sugestão de consumo: Ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								
+								Farinha de arroz, óleo de farelo de arroz (antioxidante tocoferol), tempero [maltodextrina, sal, cana de açúcar, molho de soja em Pó (maltodextrina, sal)].
+								Não contém glúten.
+								Alérgicos: Contém derivados de soja. Pode conter leite de vaca.
+							</p>	
+
+
+
+						</div>
+					</div>
+				</div>
+		  	</div>
+		  
+		</div>
+
+		<!-- 5 item-->
+		<div id="modal-fullb5" class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog">
+			  	<button class="uk-modal-close-full" type="button" uk-close></button>
+			  	<div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+				  	
+					<div class="uk-background-cover" uk-height-viewport> 
+						<div class="t1">
+							Barra Branca
+							<div class="row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+								<div class="col-2" style="margin-top: -1%;">
+									<p style="text-align: center; margin-left: -10%;">Ref.</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="fas fa-bookmark" title="Calorias"></i> 666666</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="far fa-bookmark" title="Calorias"></i> 666666</p>
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fas fa-balance-scale fa-sm "></i>
+									<p style="font-size: 13px; margin-top: -16%;">250g</p>
+									<p style="font-size: 13px; margin-top: -25%;">250g</p>
+
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fa fa-box-open fa-sm">  </i>
+									<p style="font-size: 13px; margin-top: -16%;">10 un</p>
+									<p style="font-size: 13px; margin-top: -25%;">10 un</p>
+
+								</div>
+							</div>
+							<p style="margin-top: 30%;">Preparation Method </p>
+							<hr style="width: 70%;margin-top: -2%;">
+							<div class="row">
+								<div class="col-1" style="margin-top: -3%; margin-left: -5%;">
+									<i style="font-size: 16px;" class="fas fa-bookmark" title="Preparo"></i> 
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Descongelar 20 min</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Pré aquecer forno 180°</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Cozinhar Forno 180° / 20 min</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-padding-large">
+						<div class="img-cat">
+							<img src="image/barras/4.png">
+
+							<p class="editable">
+								Originário da Tailândia, o Snack de Arroz Original Kalassi é feito com arroz aromático Thai Jasmine. O produto é assado e não contém glúten ou gordura trans em sua composição.
+								Com espessura fininha, textura leve e crocante, é ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								A Kalassi é uma nova marca do mercado tailandês, importada no Brasil pela Aurora. A empresa produz snacks de arroz e aperitivos de diversos sabores, comercializados na Europa, Ásia e Austrália.
+								
+								Origem: Tailândia
+								Sugestão de consumo: Ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								
+								Farinha de arroz, óleo de farelo de arroz (antioxidante tocoferol), tempero [maltodextrina, sal, cana de açúcar, molho de soja em Pó (maltodextrina, sal)].
+								Não contém glúten.
+								Alérgicos: Contém derivados de soja. Pode conter leite de vaca.
+							</p>	
+
+
+
+						</div>
+					</div>
+				</div>
+		  	</div>
+		  
+		</div>
+
+		<!-- 6 item-->
+		<div id="modal-fullb6" class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog">
+			  	<button class="uk-modal-close-full" type="button" uk-close></button>
+			  	<div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+				  	
+					<div class="uk-background-cover" uk-height-viewport> 
+						<div class="t1">
+							Barra Branca
+							<div class="row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+								<div class="col-2" style="margin-top: -1%;">
+									<p style="text-align: center; margin-left: -10%;">Ref.</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="fas fa-bookmark" title="Calorias"></i> 666666</p>
+									<p style="font-size: 13px; margin-top: -25%;"><i class="far fa-bookmark" title="Calorias"></i> 666666</p>
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fas fa-balance-scale fa-sm "></i>
+									<p style="font-size: 13px; margin-top: -16%;">250g</p>
+									<p style="font-size: 13px; margin-top: -25%;">250g</p>
+
+								</div>
+								<div class="col-2" style="margin-top: -7%;">
+									<i style="margin-top: -80%; font-size: 24px;" class="fa fa-box-open fa-sm">  </i>
+									<p style="font-size: 13px; margin-top: -16%;">10 un</p>
+									<p style="font-size: 13px; margin-top: -25%;">10 un</p>
+
+								</div>
+							</div>
+							<p style="margin-top: 30%;">Preparation Method </p>
+							<hr style="width: 70%;margin-top: -2%;">
+							<div class="row">
+								<div class="col-1" style="margin-top: -3%; margin-left: -5%;">
+									<i style="font-size: 16px;" class="fas fa-bookmark" title="Preparo"></i> 
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Descongelar 20 min</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Pré aquecer forno 180°</p>
+								</div>
+								<div class="col-1">
+									<div class="pre-method">></div>
+								</div>
+								<div class="col-2">
+									<p style="font-size: 12px;margin-top: 25%;margin-left: -5%">Cozinhar Forno 180° / 20 min</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-padding-large">
+						<div class="img-cat">
+							<img src="image/barras/4.png">
+
+							<p class="editable">
+								Originário da Tailândia, o Snack de Arroz Original Kalassi é feito com arroz aromático Thai Jasmine. O produto é assado e não contém glúten ou gordura trans em sua composição.
+								Com espessura fininha, textura leve e crocante, é ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								A Kalassi é uma nova marca do mercado tailandês, importada no Brasil pela Aurora. A empresa produz snacks de arroz e aperitivos de diversos sabores, comercializados na Europa, Ásia e Austrália.
+								
+								Origem: Tailândia
+								Sugestão de consumo: Ideal para ser consumido puro ou acompanhado de patês de sua preferência.
+								
+								Farinha de arroz, óleo de farelo de arroz (antioxidante tocoferol), tempero [maltodextrina, sal, cana de açúcar, molho de soja em Pó (maltodextrina, sal)].
+								Não contém glúten.
+								Alérgicos: Contém derivados de soja. Pode conter leite de vaca.
+							</p>	
+
+						</div>
+					</div>
+				</div>
+		  	</div>
+		  
+		</div>
+
+
+
+
+
+
+</div>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js'></script>
+  <script  src="script/categoria.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js'></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script type="text/javascript" src="https://daks2k3a4ib2z.cloudfront.net/5317d67d660658b254000454/js/webflow.js?2f83b8326cc4c8f7327b5dba30444a37"></script>
+  <script  src="script/script.js"></script>
+  <script  src="script/loader.js"></script>
+  <script  src="script/menu.js"></script>
+  <script  src="script/ative.js"></script>
+  <script  src="script/modal.js"></script>
+  <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/medium-editor/latest/js/medium-editor.min.js"></script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='https://getuikit.com/assets/uikit/dist/js/uikit.js?nc=4207'></script>
+  <script src='https://cdn.jsdelivr.net/medium-editor/latest/js/medium-editor.min.js'></script>
+</body>
+</html>
